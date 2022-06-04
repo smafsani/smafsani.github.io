@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @smafsani
 - 👀 I’m interested in making projects.
-- 🌱 I’m currently learning programming.
 - 💞️ I’m looking to collaborate on...
 - 📫 How to reach me ...
 
