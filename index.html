@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="navbar">
+        <span>Portfolio</span>
+        <ul class="links">
+            <li id="home-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Home</li>
+            <li id="work-btn" onclick="animateDiv('work')">Works</li>
+            <li id="skill-btn" onclick="animateDiv('skill')">Skills</li>
+            <li onclick="animateDiv('about-me')">About</li>
+            <li onclick="animateDiv('contact-me')">Contact</li>
+        </ul>
+    </div>
+    
+    <!-- HOME SECTION -->
+    <div class="home" id="home">
+        <div class="left">
+            <div>Hi! I Am</div>
+            <div class="name">Syed Md. Afsani</div>
+            <div class="tag">I am a&nbsp;<div class="one">Web Designer</div></div>
+            <div class="tag">and a&nbsp;<div class="two">Programmer</div></div>
+            <div class="btn"><a href="./files/CV-08-11-2022.pdf" download="Afsani's CV">Download CV</a></div>
+        </div>    
+        <div class="right">
+            <div class="image">
+                <img src="./images/me_main.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- WORK SECTION -->
+    <div class="work" id="work">
+        <h2>My Works</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./images/ns.jpg" alt="">
+                <div class="link">
+                    <div class="btn">
+                        <span>Network Scanning Using ARP Request</span>
+                        <p>A network scanner that scans all the ip addresses and mac addresses connected with a network.</p>
+                        <a href="https://github.com/smafsani/Network-Scanning-Using-ARP-Request" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/res.jpg" alt="">
+                <div class="link">
+                    <div class="btn">
+                        <span>Restaurant Management System Using Java</span>
+                        <p>A desktop based restaurant management system for the purpose of doing manual jobs in smart way.</p>
+                        <a href="https://github.com/smafsani/Restaurant-Management-System-Using-Java" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/port.jpg" alt="">
+                <div class="link">
+                    <div class="btn">
+                        <span>A Portfolio Website For Myself</span>
+                        <p>A protfolio website by HTML, CSS and JavaScript with smooth scrolling.</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SKILLS SECTION -->
+    <div class="skills" id="skill">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card skill">
+                <h3>Skill</h3>
+                <div class="html">HTML</div>
+                <div class="css">CSS</div>
+                <div class="js">JS</div>
+                <div class="php">PHP</div>
+                <div class="mysql">MYSQL</div>
+                <div class="java">JAVA</div>
+                <div class="python">Python</div>
+                <div class="cpp">C/C++</div>
+                <div class="nodejs">NODE.JS</div>
+            </div>
+            <div class="card education">
+                <h3>Education</h3>
+                <ul>
+                    <li><div><strong>B.Sc(Engg.) in CSE</strong> <br> 2019-running <br>North East University Bangladesh <br><a href="https://www.neub.edu.bd/" target="_blank">Visit University</a></div></li>
+                    <li><div><strong>HSC in Science</strong> <br> 2017-2018(GPA-3.75) <br>Kazi Mohammad Shafiqul Islam College<br><a href="https://www.facebook.com/KMSI.UniversityCollege/" target="_blank">Visit College</a></div></li>
+                    <li><div><strong>SSC in Science</strong> <br> 2016(GPA-4.56) <br>Syed Sayeed Uddin High School<br><a href="https://www.sohopathi.com/syed-sayeed-uddin-high-school-and-college/" target="_blank">Visit School</a></div></li>
+                </ul>
+            </div>
+            <div class="card expreience">
+                <h3>Experience</h3>
+                <ul>
+                    <li><div><strong>Freelancer as Web Designer</strong> <br> 2020-2021 <br>Freelancer.com<br><a href="https://www.freelancer.com.bd/" target="_blank">Visit Site</a></div></li>
+                    <li><div><strong>Data Entry Freelancer</strong> <br> 2019-2020 <br>Freelancer.com<br><a href="https://www.freelancer.com.bd/" target="_blank">Visit Site</a></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT-ME SECTION -->
+    <div class="about-me" id="about-me">
+        <h2>About Me</h2>
+        <div class="about">
+            <div class="left">
+                <img src="./images/me_main.jpg" alt="">
+            </div>
+            <div class="right">
+                <p class="name">Syed Md. Afsani</p>
+                <p class="desg">Web Designer & Programmer</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui facilis debitis exercitationem voluptatibus fuga, vero ratione nostrum sed at! Quisquam neque ea magnam ipsa exercitationem impedit dicta, natus, molestias error possimus aliquam. Officiis inventore, quibusdam error est provident beatae facilis quia iusto, a cum harum voluptatem exercitationem animi illo quos ex deleniti consequatur ut blanditiis iure neque hic? Earum provident, enim animi, quis repudiandae magni laborum, sunt harum illo id perspiciatis rerum nostrum consectetur officiis doloribus porro architecto veritatis qui nobis. A odio enim qui consectetur deleniti molestiae. Error magni dolor vitae aliquid molestias distinctio, obcaecati ut inventore? Error delectus quo culpa odio corporis repellendus quibusdam labore sed eius rerum cum maiores, libero voluptates corrupti necessitatibus. In doloremque magnam illum minima consectetur libero illo ut mollitia culpa, vel explicabo!</p>
+                <h3>Achievements:</h3>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis est dicta placeat mollitia ab dolorem!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, alias?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi provident culpa facere numquam harum. Sunt nostrum asperiores ratione voluptatem libero.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CONTACT SECTION -->
+    <div class="contact-me" id="contact-me">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <div class="first">
+                <p class="header3">Contact With Me</p>
+                <div>Email: syedafsani2019@gmail.com</div>
+                <div>Phone: +8801748******</div>
+                <div>Website: <a href="https://www.github.com/smafsani" target="_blank">Visit My Github Profile</a></div>
+            </div>
+            <div class="second">
+                <p class="header3">Get In Touch</p>
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your email">
+                <textarea placeholder="Type your message here"></textarea>
+                <div class="btn">
+                    <button>Reset</button>
+                    <Button>Submit</Button>
+                </div>
+            </div>
+            <div class="third">
+                <p class="header3">More Ways To Contact</p>
+                <div><i class="fa-brands fa-facebook fb"></i><a href="https://www.facebook.com/syed.mdafsani.5/" target="_blank">Facebook</a></div>
+                <div><i class="fa-brands fa-youtube yt"></i><a href="https://www.youtube.com" target="_blank">Youtube</a></div>
+                <div><i class="fa-brands fa-linkedin link"></i><a href="https://bd.linkedin.com/in/syed-md-afsani-7a5081240" target="_blank">Linkedin</a></div>
+                <div><i class="fa-brands fa-github git"></i><a href="https://www.github.com/smafsani" target="_blank">Github</a></div>
+                <div><i class="fa-brands fa-twitter twi"></i><a href="https://www.twitter.com/" target="_blank">Twitter</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy;&nbsp;2022 - All rights are reserved by Syed Md. Afsani</p>
+    </footer>
+
+    <script>
+        // $("#work-btn").click(function() {
+        //     $('html, body').animate({
+        //         scrollTop: $("#work").offset().top
+        //     }, 500);
+        // });
+        function animateDiv(id){
+            let doc = document.getElementById(id);
+            doc.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
