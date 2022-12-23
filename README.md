@@ -3,7 +3,7 @@
 - 💞️ I’m looking to collaborate on...
 - 📫 How to reach me ...
 
-My Website: https://smafsani.github.com
+My Website: https://smafsani.github.io
 
 <!---
 smafsani/smafsani is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
