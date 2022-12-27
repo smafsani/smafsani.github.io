@@ -66,6 +66,10 @@ body{
     animation: spread 0.2s linear forwards;
     left: 50%;
 }
+.navbar i{
+    display: none;
+}
+
 @keyframes spread {
     0%{
         width: 0%;
@@ -103,14 +107,17 @@ body{
     border: 5px solid crimson;
     box-shadow: 0 0 10px 1px crimson;
 }
-.home .right .image:hover{
-    overflow: visible;
-    border: none;
-    box-shadow: none;
-}
-.home .right .image:hover img{
-    width: 300px;
-    height: 300px;
+@media screen and (min-width: 920px) {
+    .home .right .image:hover{
+        overflow: visible;
+        border: none;
+        box-shadow: none;
+    }
+    .home .right .image:hover img{
+        width: 300px;
+        height: 300px;
+        margin-left: -30px;
+    }
 }
 .home div{
     color: #fff;
@@ -155,11 +162,11 @@ body{
 }
 @keyframes animate1 {
     0%,8.329%{width: 0px;}
-    100%{width: 205px;}
+    90%, 100%{width: 230px;}
 }
 @keyframes animate2 {
     0%,8.329%{width: 0px;}
-    100%{width: 190px;}
+    90%, 100%{width: 215px;}
 }
 
 .home .btn{
@@ -201,19 +208,31 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.work .cards::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
 }
 .work .cards .card{
     width: 300px;
-    height: 380px;
-    margin: 0 30px;
+    height: 180px;
+    margin: 10px 10px;
     position: relative;
 }
-.work .cards .card img{
+.work .cards .card .front{
     width: 300px;
-    height: 380px;
+    height: 180px;
     cursor: pointer;
     box-shadow: 1px 1px 7px 1px #444;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
 }
 .work .cards .card .link{
     width: 300px;
@@ -226,6 +245,9 @@ body{
     background: linear-gradient(to top, crimson, transparent);
     display: none;
 }
+.work .cards .card:hover .front{
+    color: rgba(255, 255, 255, 0.2);
+}
 .work .cards .card:hover .link{
     display: block;
     animation: rise 0.2s linear forwards;
@@ -235,7 +257,7 @@ body{
         height: 0;
     }
     100%{
-        height: 380px;
+        height: 180px;
     }
 }
 .work .cards .card .link .btn{
@@ -287,6 +309,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: auto;
+}
+.skills .cards::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
 }
 .skills .cards .card{
     width: 300px;
@@ -420,7 +449,7 @@ body{
 /* ABOUT ME SECTION */
 .about-me{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,7 +513,7 @@ body{
 /* CONTACT SECTION */
 .contact-me{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -505,7 +534,7 @@ body{
     justify-content: space-between;
 }
 .contact .first{
-    width: 30%;
+    width: 25%;
     height: 100%;
     margin-left: 2%;
     display: flex;
@@ -587,7 +616,7 @@ body{
     
 }
 .contact .third{
-    width: 30%;
+    width: 35%;
     height: 100%;
     margin-right: 2%;
     display: flex;
@@ -654,4 +683,20 @@ footer p{
     color: #fff;
     margin: 0;
     padding: 0;
+}
+.goto-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+.goto-top i{
+    color: #fff;
 }

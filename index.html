@@ -9,18 +9,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="mobile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="bg-img"></div>
     <div class="navbar">
         <span>Portfolio</span>
-        <ul class="links">
+        <ul class="links hide-menu-bar" id="links-div">
             <li id="home-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Home</li>
-            <li id="work-btn" onclick="animateDiv('work')">Works</li>
+            <li id="work-btn" onclick="animateDiv('work')">Projects</li>
             <li id="skill-btn" onclick="animateDiv('skill')">Skills</li>
             <li onclick="animateDiv('about-me')">About</li>
             <li onclick="animateDiv('contact-me')">Contact</li>
         </ul>
+        <i class="fa-solid fa-bars" onclick="showMenuBar('links-div')"></i>
     </div>
     
     <!-- HOME SECTION -->
@@ -41,38 +43,119 @@
 
     <!-- WORK SECTION -->
     <div class="work" id="work">
-        <h2>My Works</h2>
+        <h2>My Projects</h2>
         <div class="cards">
             <div class="card">
-                <img src="./images/ns.jpg" alt="">
+                <div class="front">Network Scanning Using ARP Request Using Python</div>
                 <div class="link">
                     <div class="btn">
-                        <span>Network Scanning Using ARP Request</span>
                         <p>A network scanner that scans all the ip addresses and mac addresses connected with a network.</p>
                         <a href="https://github.com/smafsani/Network-Scanning-Using-ARP-Request" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/res.jpg" alt="">
+                <div class="front">Restaurant Management System Using Java</div>
                 <div class="link">
                     <div class="btn">
-                        <span>Restaurant Management System Using Java</span>
                         <p>A desktop based restaurant management system for the purpose of doing manual jobs in smart way.</p>
                         <a href="https://github.com/smafsani/Restaurant-Management-System-Using-Java" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <img src="./images/port.jpg" alt="">
+                <div class="front">Custom Implementation of some Machine Learning Algorithms.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>Implementing Machine Learning algorithms using pyton. But without using any scikit-learn library model.</p>
+                        <a href="https://github.com/smafsani/Machine-Learning-Algorithms-Custom-Implementation" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">A Portfolio Website For Myself</div>
                 <div class="link">
                     <div class="btn">
-                        <span>A Portfolio Website For Myself</span>
                         <p>A protfolio website by HTML, CSS and JavaScript with smooth scrolling.</p>
+                        <a href="https://github.com/smafsani/smafsani.github.io" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">CrowdChat - A Group Chat Application</div>
+                <div class="link">
+                    <div class="btn">
+                        <p>CrowdChat is a group chat application which is built using EJS, NodeJS, MongoDB. Registration validation process is ignored in this project. Because I wanted to practice socket.io and routing.</p>
+                        <a href="https://github.com/smafsani/CrowdChat-A-Group-Chat-Application" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">Journal Engine Website.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A website using HTML, CSS, JS, PHP and MySQL to publish research papers. This project also has some smart features like machine learning based paper suggestion and reviewer suggestion.</p>
                         <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="front">Sylhet Cycling Community Website.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A website using HTML, CSS, JS, PHP and MySQL to provide services for a Cycling Community. It was a group project where I lead the group while making this project.</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">A Online Food Sharing Website.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A food sharing website using HTML, CSS, JavaScript, MySql and PHP for donating food instead of wasting. Feature of setting or meeting and joining a meeting to spend time with more people.</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">Port Scanner Using Python</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A port scanner project to get all possible ports running on a network.</p>
+                        <a href="https://github.com/smafsani/Port-Scanner-Using-Python" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">A Simple Text Encryption App Using Python.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A text encryption app using python to encrypt and decrypt text using base64 library.</p>
+                        <a href="https://github.com/smafsani/A-Simple-Text-Encryption-App-Using-Python-Base64" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">A File Searcher App Using Java.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A file manager where it searches entire directory on your computer for a file. And then it finds all the files with the names that contain the name of the file you are searching (if available).</p>
+                        <a href="https://github.com/smafsani/AFileSearcher" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="front">A 2D Snake Game Using Java.</div>
+                <div class="link">
+                    <div class="btn">        
+                        <p>A 2D Snake Game using Java. It has features such as Continue, New Game, Levels, Score History, etc.</p>
+                        <a href="https://github.com/smafsani/A-Snake-Game" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     
@@ -155,7 +238,7 @@
                 </div>
             </div>
             <div class="third">
-                <p class="header3">More Ways To Contact</p>
+                <div class="header3">More Ways To Contact</div>
                 <div><i class="fa-brands fa-facebook fb"></i><a href="https://www.facebook.com/syed.mdafsani.5/" target="_blank">Facebook</a></div>
                 <div><i class="fa-brands fa-youtube yt"></i><a href="https://www.youtube.com" target="_blank">Youtube</a></div>
                 <div><i class="fa-brands fa-linkedin link"></i><a href="https://bd.linkedin.com/in/syed-md-afsani-7a5081240" target="_blank">Linkedin</a></div>
@@ -164,6 +247,13 @@
             </div>
         </div>
     </div>
+
+    <!-- GO TO TOP BUTTON -->
+    <div class="goto-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+
     <!-- FOOTER -->
     <footer>
         <p>&copy;&nbsp;2022 - All rights are reserved by Syed Md. Afsani</p>
@@ -180,7 +270,20 @@
             doc.scrollIntoView({
                 behavior: 'smooth'
             });
+            let links = document.getElementById('links-div');
+            if(!links.classList.contains('hide-menu-bar')){
+                links.classList.add('hide-menu-bar')
+            }
+            if(links.classList.contains('menu-bar')){
+                links.classList.remove('menu-bar')
+            }
         }
+        function showMenuBar(id){
+            let doc = document.getElementById(id);
+            doc.classList.toggle('hide-menu-bar');
+            doc.classList.toggle('menu-bar');
+        }
+        
     </script>
 </body>
 </html>
