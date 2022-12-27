@@ -162,11 +162,11 @@ body{
 }
 @keyframes animate1 {
     0%,8.329%{width: 0px;}
-    90%, 100%{width: 230px;}
+    90%, 100%{width: 36%;}
 }
 @keyframes animate2 {
     0%,8.329%{width: 0px;}
-    90%, 100%{width: 215px;}
+    90%, 100%{width: 33%;}
 }
 
 .home .btn{
