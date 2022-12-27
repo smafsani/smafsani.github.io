@@ -44,11 +44,11 @@
     }
     @keyframes animate1 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 43%;}
+        90%, 100%{width: 175px;}
     }
     @keyframes animate2 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 40%;}
+        90%, 100%{width: 160px;}
     }
     
 }
@@ -116,11 +116,11 @@
     }
     @keyframes animate1 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 30%;}
+        90%, 100%{width: 132px;}
     }
     @keyframes animate2 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 27.5%;}
+        90%, 100%{width: 122px;}
     }
 }
 
@@ -167,6 +167,14 @@
     .about .right p.name{
         font-size: 22px;
     }
+    @keyframes animate1 {
+        0%,8.329%{width: 0px;}
+        90%, 100%{width: 103px;}
+    }
+    @keyframes animate2 {
+        0%,8.329%{width: 0px;}
+        90%, 100%{width: 95px;}
+    }
 
 }
 @media screen and (max-width: 620px) {
@@ -185,13 +193,5 @@
     }
     .contact-me h2{
         margin-bottom: 30px;
-    }
-    @keyframes animate1 {
-        0%,8.329%{width: 0px;}
-        90%, 100%{width: 35%;}
-    }
-    @keyframes animate2 {
-        0%,8.329%{width: 0px;}
-        90%, 100%{width: 32%;}
     }
 }
