@@ -1,9 +1,8 @@
+# Visit My Website: https://smafsani.github.io
 - 👋 Hi, I’m @smafsani
 - 👀 I’m interested in making projects.
 - 💞️ I’m looking to collaborate on...
 - 📫 How to reach me ...
-
-My Website: https://smafsani.github.io
 
 <!---
 smafsani/smafsani is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
