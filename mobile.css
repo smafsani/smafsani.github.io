@@ -44,7 +44,7 @@
     }
     @keyframes animate1 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 175px;}
+        90%, 100%{width: 188px;}
     }
     @keyframes animate2 {
         0%,8.329%{width: 0px;}
@@ -116,11 +116,11 @@
     }
     @keyframes animate1 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 132px;}
+        90%, 100%{width: 142px;}
     }
     @keyframes animate2 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 122px;}
+        90%, 100%{width: 121px;}
     }
 }
 
@@ -169,11 +169,11 @@
     }
     @keyframes animate1 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 103px;}
+        90%, 100%{width: 110px;}
     }
     @keyframes animate2 {
         0%,8.329%{width: 0px;}
-        90%, 100%{width: 95px;}
+        90%, 100%{width: 93px;}
     }
 
 }
