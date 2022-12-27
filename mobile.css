@@ -122,6 +122,12 @@
         0%,8.329%{width: 0px;}
         90%, 100%{width: 121px;}
     }
+    .bg-img{
+        height: 110vh;
+    }
+    .bg-img::before{
+        height: 110vh;
+    }
 }
 
 /* 520 */
@@ -174,6 +180,12 @@
     @keyframes animate2 {
         0%,8.329%{width: 0px;}
         90%, 100%{width: 93px;}
+    }
+    .bg-img{
+        height: 110vh;
+    }
+    .bg-img::before{
+        height: 110vh;
     }
 
 }
