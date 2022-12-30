@@ -532,6 +532,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-between;
+	align-items: flex-start;
 }
 .contact .first{
     width: 25%;
@@ -547,6 +548,7 @@ body{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 40px;
+	margin-top: 0;
 }
 .contact .first div{
     color: #fff;
@@ -573,6 +575,7 @@ body{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
+	margin-top: 0;
 }
 .contact .second input{
     width: 375px;
