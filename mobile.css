@@ -159,8 +159,8 @@
         font-size: 14px;
     }
     .home .tag div{
-        height: 30px;
-        margin-top: 9px;
+        height: 20px;
+        margin-top: 0px;
     }
     .about{
         flex-direction: column;
