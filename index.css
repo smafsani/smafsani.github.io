@@ -445,6 +445,9 @@ body{
     color: #fff;
     text-decoration: none;
 }
+.skills .cards .card ul li a:hover{
+    color: #dc143c;
+}
 
 /* ABOUT ME SECTION */
 .about-me{
